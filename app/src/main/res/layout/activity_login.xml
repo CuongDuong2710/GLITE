@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_ppy_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="@dimen/dimen24dp"
+                android:layout_marginTop="@dimen/dimen24dp"
+                android:adjustViewBounds="false"
+                android:src="@drawable/logo_ppy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/dimen32dp"
+                android:paddingLeft="@dimen/dimen32dp"
+                android:paddingRight="@dimen/dimen32dp"
+                android:paddingStart="@dimen/dimen32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.glite.popeyes.view.custom.CustomButtonIcon
+                        android:id="@+id/btn_login_fb"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height_normal"
+                        android:layout_marginEnd="@dimen/dimen3dp"
+                        android:layout_marginRight="@dimen/dimen3dp"
+                        android:layout_weight="1"
+                        app:btn_background="@drawable/bg_btn_fb"
+                        app:btn_icon="@drawable/ic_facebook"
+                        app:btn_text="@string/text_continue_with"
+                        app:btn_textColor="@color/white"
+                        app:btn_text_capital="false"
+                        app:btn_text_size="@dimen/button_text_size_17sp" />
+
+
+                    <com.glite.popeyes.view.custom.CustomButtonIcon
+                        android:id="@+id/btn_login_gplus"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height_normal"
+                        android:layout_marginLeft="@dimen/dimen3dp"
+                        android:layout_marginStart="@dimen/dimen3dp"
+                        android:layout_weight="1"
+                        app:btn_background="@drawable/bg_btn_gplus"
+                        app:btn_icon="@drawable/ic_gplus"
+                        app:btn_text="@string/text_login_with"
+                        app:btn_textColor="@color/white"
+                        app:btn_text_capital="false"
+                        app:btn_text_size="@dimen/button_text_size_17sp" />
+
+                </LinearLayout>
+
+                <com.glite.popeyes.view.custom.FuturaButton
+                    android:id="@+id/btn_guest_login"
+                    style="@style/button.guest_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_normal"
+                    android:background="@drawable/bg_blue_button_selector"
+                    android:text="@string/text_guest_login" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_Or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:text="@string/text_or"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/text_email_address"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_normal"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableEnd="@drawable/ic_email_blue"
+                    android:drawablePadding="@dimen/dimen8dp"
+                    android:drawableRight="@drawable/ic_email_blue"
+                    android:hint="@string/text_email_address"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen8dp"
+                    android:text="cuongduongngocquoc@gmail.com"
+                    android:textColorHint="@color/blue" />
+
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/text_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_normal"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableEnd="@drawable/ic_password_blue"
+                    android:drawableRight="@drawable/ic_password_blue"
+                    android:hint="@string/text_password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:text="12345"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/blue" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.glite.popeyes.view.custom.VerdanaTextView
+                        android:id="@+id/text_forgot_password"
+                        style="@style/text.white.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen6dp"
+                        android:layout_marginRight="@dimen/dimen6dp"
+                        android:text="@string/text_forgot_password" />
+
+                    <com.glite.popeyes.view.custom.FuturaTextView
+                        android:id="@+id/tv_click_here"
+                        style="@style/text.orange.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen4dp"
+                        android:text="@string/text_click_here"
+                        app:underline="true" />
+                </LinearLayout>
+
+                <com.glite.popeyes.view.custom.FuturaButton
+                    android:id="@+id/btn_login"
+                    style="@style/button.login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:background="@drawable/bg_rouge_selector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen32dp"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.glite.popeyes.view.custom.VerdanaTextView
+                        android:id="@+id/text_no_account"
+                        style="@style/text.white.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen6dp"
+                        android:layout_marginRight="@dimen/dimen6dp"
+                        android:text="@string/text_don_t_have_an_account_yet" />
+
+                    <com.glite.popeyes.view.custom.FuturaTextView
+                        android:id="@+id/tv_sign_up"
+                        style="@style/text.orange.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen4dp"
+                        android:text="@string/text_sign_up"
+                        app:underline="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

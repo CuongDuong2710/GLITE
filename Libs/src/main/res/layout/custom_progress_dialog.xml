@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_panding_medium" >
+
+    <com.glitellp.libs.custom.ProgressWheel
+        android:layout_width="@dimen/width_height_medium"
+        android:layout_height="@dimen/width_height_medium"
+        android:layout_marginBottom="@dimen/margin_panding_medium"
+        wheel:barColor="#ffa500"
+        wheel:progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/tv_content_mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait!"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold" />
+
+</LinearLayout>

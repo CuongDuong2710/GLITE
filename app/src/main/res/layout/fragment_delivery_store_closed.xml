@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_popoyes_layerlist"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_black_delivery_available"
+        android:paddingEnd="@dimen/dimen12dp"
+        android:paddingLeft="@dimen/dimen12dp"
+        android:paddingRight="@dimen/dimen12dp"
+        android:paddingStart="@dimen/dimen12dp"
+        android:paddingTop="@dimen/dimen48dp">
+
+
+        <TextView
+            android:id="@+id/text_delivery_available"
+            style="@style/OrangeStyle17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/msg_delivery_is_not_available_as_our_stores_are_closed"
+            android:textColor="@color/orange" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_message"
+        style="@style/TextButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen24dp"
+        android:background="@drawable/bg_black_when_would_you_like"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen12dp"
+        android:paddingRight="@dimen/dimen12dp"
+        android:text="@string/msg_would_you_like_to_order_for_another_day" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:background="@drawable/bg_black_star_order"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen6dp"
+        android:paddingTop="@dimen/dimen12dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen24dp"
+            android:paddingRight="@dimen/dimen24dp">
+
+            <DatePicker
+                android:id="@+id/calendar_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="97dp">
+
+            </DatePicker>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen10dp"
+                android:layout_marginTop="@dimen/dimen12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_delivery_time_" />
+
+                <ImageView
+                    android:id="@+id/delivery_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/hour_active" />
+
+                <ImageView
+                    android:id="@+id/delivery_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/mins_active" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_start_order"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_summit_order"
+            android:text="@string/text_start_your_order"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

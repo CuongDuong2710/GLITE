@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_key_pad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="@dimen/pad_button_padding">
+
+    <TableLayout
+        android:id="@+id/tblNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="3"
+        android:visibility="visible"
+        android:background="@color/gray"
+        android:divider="@color/grey500"
+        android:showDividers="middle">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:text="1"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="2"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="3"
+                android:textSize="@dimen/pad_num_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_button_height"
+            android:layout_marginBottom="0.5dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="4"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="5"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="6"
+                android:textSize="@dimen/pad_num_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_button_height"
+            android:layout_marginBottom="0.5dp">
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="7"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="8"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="9"
+                android:textSize="@dimen/pad_num_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_button_height">
+
+            <TextView
+                android:id="@+id/tvStar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:paddingLeft="70dp"
+                android:text="*"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <TextView
+                android:id="@+id/tv0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/pad_button_background_selector"
+                android:gravity="center"
+                android:onClick="ClickHandle"
+                android:padding="@dimen/pad_button_padding"
+                android:text="0"
+                android:textSize="@dimen/pad_num_text_size" />
+
+            <ImageButton
+                android:id="@+id/tvDel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pad_button_height"
+                android:layout_margin="@dimen/pad_button_padding"
+                android:layout_weight="1"
+                android:background="@drawable/pad_go_button_background_selector"
+                android:src="@drawable/ic_backspace_black"
+                android:gravity="center"
+                android:textSize="@dimen/pad_num_text_size"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/bg_navigation"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon_navigation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen2dp"
+            android:paddingStart="@dimen/dimen2dp"
+            android:paddingTop="@dimen/dimen8dp"
+            android:paddingBottom="@dimen/dimen8dp"
+            android:paddingRight="@dimen/dimen8dp"
+            android:paddingEnd="@dimen/dimen8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/icon_navigation_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_popeyes" />
+
+        <ImageView
+            android:id="@+id/icon_navigation_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="@dimen/dimen2dp"
+            android:paddingEnd="@dimen/dimen2dp"
+            android:paddingLeft="@dimen/dimen8dp"
+            android:paddingBottom="@dimen/dimen8dp"
+            android:paddingTop="@dimen/dimen8dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

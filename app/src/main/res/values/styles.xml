@@ -1,0 +1,254 @@
+<resources>
+    
+    
+    <style name="button"/>
+    
+    <style name="menu"/>
+
+    <style name="text"/>
+
+    <style name="text.blue">
+        <item name="android:textColor">@color/marin_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.blue.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text.orange">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.orange.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text.orange.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text.orange.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text.orange.17sp">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text.blue.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text.blue.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text.blue.16sp.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.blue.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text.white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text.white.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text.white.14sp.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.white.bold18sp">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text.white.bold17sp">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text.rouge">
+        <item name="android:textColor">@color/rouge</item>
+    </style>
+
+    <style name="text.rouge.12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.rouge.18sp">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextButtonStyle">
+        <item name="android:textColor">@color/marin_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="OrangeStyle14">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="OrangeStyle17">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextStyleBlack17">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="EditTextEmailPasswordStyle">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">@dimen/dimen12dp</item>
+        <item name="android:drawablePadding">@dimen/dimen6dp</item>
+        <item name="android:paddingLeft">@dimen/dimen10dp</item>
+        <item name="android:paddingRight">@dimen/dimen10dp</item>
+    </style>
+
+    <style name="TextStyleBlue14">
+        <item name="android:textColor">@color/marin_blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyleWhite14">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyleWhite13">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextStyleWhite17">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextStyleWhite17.Address">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextDeliveryStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="EditTextGuestStyle">
+        <item name="android:textColor">@color/white_60percent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/dimen10dp</item>
+    </style>
+
+    <style name="TextStyle36">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="TextStyle17">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextStyleBold17">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+    <!-- Style For Deliver Menu !-->
+
+    <style name="menu.title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="menu.title.blue">
+        <item name="android:textColor">@color/marin_blue</item>
+    </style>
+
+    <style name="menu.title.red">
+        <item name="android:textColor">@color/rouge</item>
+    </style>
+
+    <style name="menu.logo">
+        <item name="android:layout_width">152dp</item>
+        <item name="android:layout_height">152dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginTop">@dimen/dimen16dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen6dp</item>
+    </style>
+
+    <style name="button.select">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="button.menu" parent="text.white.bold18sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="button.guest_login" parent="text.white.bold18sp">
+        <item name="android:text">@string/text_guest_login</item>
+        <item name="android:layout_marginTop">@dimen/dimen16dp</item>
+    </style>
+
+    <style name="button.login" parent="text.white.bold18sp">
+        <item name="android:text">@string/text_login</item>
+    </style>
+
+    <style name="button.checkout" parent="text.white.bold18sp">
+        <item name="android:text">@string/text_checkout</item>
+    </style>
+
+    <style name="button.pay_with_credit_card" parent="text.white.bold18sp">
+        <item name="android:text">@string/text_pay_with_credit_card</item>
+        <item name="android:layout_marginTop">@dimen/dimen16dp</item>
+    </style>
+
+    <style name="button.cash_on_delivery" parent="text.white.bold18sp">
+        <item name="android:text">@string/text_cash_on_delivery</item>
+        <item name="android:layout_marginTop">@dimen/dimen16dp</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@android:color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+</resources>

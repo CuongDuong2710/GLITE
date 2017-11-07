@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpopeyes"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen24dp"
+            android:paddingRight="@dimen/dimen24dp"
+            android:paddingTop="@dimen/dimen32dp">
+
+            <com.glite.popeyes.view.custom.FuturaTextView
+                android:id="@+id/tv_provide_guest"
+                style="@style/TextButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_provider_order_guest" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen24dp"
+                android:orientation="vertical"
+                android:paddingEnd="18dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingStart="18dp">
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_guest_name"
+                    style="@style/TextStyleBlue14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_name" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_guest_name"
+                    android:textSize="12sp"
+                    android:textColor="@color/orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginTop="@dimen/dimen4dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="textPersonName"
+                    android:paddingTop="@dimen/dimen12dp"
+                    android:paddingLeft="11dp" />
+
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_guest_email"
+                    style="@style/TextStyleBlue14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:maxLines="1"
+                    android:text="@string/text_email_address" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_guest_email"
+                    android:textSize="12sp"
+                    android:textColor="@color/orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginTop="@dimen/dimen4dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="@dimen/dimen12dp"
+                    android:paddingLeft="11dp" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_guest_phone"
+                    style="@style/TextStyleBlue14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:maxLines="1"
+                    android:text="@string/text_phone_number" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_guest_phone"
+                    android:textSize="12sp"
+                    android:textColor="@color/orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginTop="@dimen/dimen4dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="phone"
+                    android:paddingTop="@dimen/dimen12dp"
+                    android:paddingLeft="11dp" />
+
+                <com.glite.popeyes.view.custom.FuturaButton
+                    android:id="@+id/btn_submit_to_order"
+                    style="@style/text.white.bold18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_big"
+                    android:layout_marginTop="@dimen/dimen32dp"
+                    android:background="@drawable/bg_rouge_selector"
+                    android:text="@string/text_summit_to_order_now" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

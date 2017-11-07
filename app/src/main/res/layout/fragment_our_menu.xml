@@ -1,0 +1,35 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/our_menu_container"
+    android:tag="menu_container">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_our_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen8dp"
+            android:layout_marginRight="@dimen/dimen8dp"
+            tools:listitem="@layout/item_delivery_menu_parent" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Our menu show here!"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/button_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:background="@drawable/bg_btn_expand"
+            android:src="@drawable/icon_arrow" />
+
+</FrameLayout>

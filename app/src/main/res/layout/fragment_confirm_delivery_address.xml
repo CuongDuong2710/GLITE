@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpopeyes"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen10dp">
+
+
+            <com.glite.popeyes.view.custom.FuturaTextView
+                android:id="@+id/text_confirm_your_address"
+                style="@style/text.blue.18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen16dp"
+                android:layout_marginRight="@dimen/dimen16dp"
+                android:ellipsize="end"
+                android:text="@string/text_confirm_your_address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.4dp"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/dimen32dp"
+                android:paddingLeft="@dimen/dimen32dp"
+                android:paddingRight="@dimen/dimen32dp"
+                android:paddingStart="@dimen/dimen32dp">
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_confirm_delivery_address"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_street_address"
+                    android:textStyle="normal" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_confirm_delivery_address"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginBottom="@dimen/dimen6dp"
+                    android:layout_marginTop="@dimen/dimen6dp"
+                    android:background="@drawable/bg_rectangle_white80"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingRight="@dimen/dimen12dp"
+                    android:textColor="@color/orange" />
+
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_confirm_delivery_address2"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_address_2_optional"
+                    android:textStyle="normal" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_confirm_delivery_address2"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginBottom="@dimen/dimen6dp"
+                    android:layout_marginTop="@dimen/dimen6dp"
+                    android:background="@drawable/bg_rectangle_white80"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingRight="@dimen/dimen12dp"
+                    android:textColor="@color/orange" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_confirm_unit_no"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_unit_no"
+                    android:textStyle="normal" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_confirm_unit_no"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginBottom="@dimen/dimen6dp"
+                    android:layout_marginTop="@dimen/dimen6dp"
+                    android:background="@drawable/bg_rectangle_white80"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingRight="@dimen/dimen12dp"
+                    android:textColor="@color/orange" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_confirm_contact_number"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_contact_number"
+                    android:textStyle="normal" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_confirm_contact_number"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginBottom="@dimen/dimen6dp"
+                    android:layout_marginTop="@dimen/dimen6dp"
+                    android:background="@drawable/bg_rectangle_white80"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingRight="@dimen/dimen12dp"
+                    android:textColor="@color/orange" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_confirm_delivery_city"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_city"
+                    android:textStyle="normal" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_confirm_delivery_city"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginBottom="@dimen/dimen6dp"
+                    android:layout_marginTop="@dimen/dimen6dp"
+                    android:background="@drawable/bg_rectangle_white80"
+                    android:enabled="false"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingRight="@dimen/dimen12dp"
+                    android:text="@string/text_singapore" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_confirm_delivery_postal_code"
+                    style="@style/text.blue.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/text_postal_code"
+                    android:textStyle="normal" />
+
+                <com.glite.popeyes.view.custom.VerdanaEditText
+                    android:id="@+id/edt_confirm_delivery_postal_code"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen32dp"
+                    android:layout_marginBottom="@dimen/dimen24dp"
+                    android:layout_marginTop="@dimen/dimen6dp"
+                    android:background="@drawable/bg_rectangle_white80"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingRight="@dimen/dimen12dp" />
+
+                <com.glite.popeyes.view.custom.FuturaButton
+                    android:id="@+id/btn_confirm_delivery_address"
+                    style="@style/text.white.bold18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_big"
+                    android:background="@drawable/bg_rouge_selector"
+                    android:gravity="center"
+                    android:text="@string/text_confirm_delivery_address" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen6dp"
+    android:layout_marginLeft="@dimen/dimen8dp"
+    android:layout_marginRight="@dimen/dimen8dp"
+    android:background="@drawable/rectangle_207_copy_3">
+
+    <com.glite.popeyes.view.custom.FuturaTextView
+        android:id="@+id/text_order_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgmashed_potatoes"
+        android:layout_marginTop="@dimen/dimen4dp"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dimen16dp"
+        android:textSize="16sp"
+        android:textColor="@color/rouge"
+        android:textStyle="bold"
+        android:text="@string/text_mashed_potatoes_with_cajun_gravy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen16dp">
+
+        <ImageView
+            android:id="@+id/img_order_item"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:src="@drawable/chicken"
+            android:layout_marginTop="@dimen/dimen8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dimen20dp"
+            android:layout_marginRight="@dimen/dimen8dp"
+            android:layout_weight="1">
+
+            <com.glite.popeyes.view.custom.VerdanaTextView
+                android:id="@+id/text_order_item_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/marin_blue"
+                android:text="@string/text_lorem_isum_dolor_order_item"
+                android:maxLines="4"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen8dp">
+
+                <Button
+                    android:id="@+id/btn_add_an_item"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/iconadd"/>
+
+                <TextView
+                    android:id="@+id/text_number_order_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/rectangle_2_copy"
+                    android:layout_marginRight="@dimen/margin_right_edit_number_order_item"
+                    android:layout_marginEnd="@dimen/margin_right_edit_number_order_item"
+                    android:text="01"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_minus_an_item"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/remove" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:layout_marginLeft="@dimen/dimen8dp"
+        android:layout_marginRight="@dimen/dimen8dp"
+        android:layout_marginBottom="@dimen/dimen4dp"
+        android:background="@drawable/buttonprice">
+
+       <TextView
+           android:id="@+id/text_view_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="@dimen/dimen12dp"
+           android:layout_marginRight="@dimen/dimen12dp"
+           android:text="@string/price"
+           style="@style/text.blue.16sp.bold"
+           android:layout_marginStart="@dimen/dimen12dp"
+           android:layout_marginLeft="@dimen/dimen10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/text_view_price"
+            android:layout_toRightOf="@id/text_view_price"
+            style="@style/text.blue.16sp.bold"
+            android:text="$16.90" />
+
+        <com.glite.popeyes.view.custom.FuturaButton
+            android:id="@+id/btn_remove_this_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonremove"
+            android:text="@string/remove"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

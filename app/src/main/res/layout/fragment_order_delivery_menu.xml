@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpopeyes"
+    android:orientation="vertical"
+    android:id="@+id/layout_order_delivery_menu">
+
+    <include layout="@layout/include_appbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_our_menu_checkout_header" />
+
+
+        <FrameLayout
+            android:id="@+id/order_delivery_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/button_arrow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_weight="0"-->
+        <!--android:background="@drawable/bg_btn_expand"-->
+        <!--android:src="@drawable/icon_arrow" />-->
+
+</LinearLayout>

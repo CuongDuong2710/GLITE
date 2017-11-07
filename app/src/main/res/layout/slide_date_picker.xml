@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="272dp"
+    android:layout_height="183dp"
+    android:background="@drawable/bgcrow_down_tab">
+
+        <TextView
+            android:id="@+id/text_title_of_date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyleBlue14"
+            android:text="Choose date"
+            android:layout_marginTop="@dimen/dimen13.5dp"
+            android:layout_marginLeft="@dimen/dimen16dp"/>
+
+        <View
+            android:id="@+id/viewHorizontalDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray_holo_dark">
+
+        </View>
+
+        <com.glite.popeyes.view.custom.CustomViewPager
+            android:id="@+id/viewDatePager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.glite.popeyes.view.custom.CustomViewPager>
+
+    <!--
+        The horizontal separator that runs across the top of
+        the button bar
+    -->
+
+    <View
+        android:id="@+id/buttonHorizontalDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_holo_dark">
+
+    </View>
+
+    <!-- Footer button bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="@string/text_cancel_dialog"
+            style="@style/TextStyleWhite14"/>
+
+        <!-- The vertical divider line between the two buttons -->
+
+        <View
+            android:id="@+id/buttonVerticalDivider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_holo_dark">
+        </View>
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="@string/text_ok_dialog"
+            style="@style/TextStyleWhite14"/>
+
+    </LinearLayout>
+
+</LinearLayout>

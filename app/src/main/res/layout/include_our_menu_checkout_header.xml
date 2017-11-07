@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen6dp"
+    android:layout_marginTop="@dimen/dimen16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="@dimen/dimen8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.glite.popeyes.view.custom.FuturaButton
+        android:id="@+id/button_our_menu"
+        style="@style/button.menu"
+        android:background="@drawable/btn_orange_selector"
+        android:text="@string/btn_our_menu" />
+
+    <LinearLayout
+        android:id="@+id/button_cart"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_normal"
+        android:layout_marginLeft="@dimen/dimen16dp"
+        android:layout_marginRight="@dimen/dimen16dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_round_cart_inactive"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen3dp"
+            android:src="@drawable/icon_cart_inactive" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen3dp">
+
+            <com.glite.popeyes.view.custom.FuturaTextView
+                android:id="@+id/text_number_item"
+                style="@style/text.orange.17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen6dp"
+                android:layout_marginRight="@dimen/dimen6dp"
+                android:text="0" />
+
+            <com.glite.popeyes.view.custom.FuturaTextView
+                android:id="@+id/text_items"
+                style="@style/text.white.bold17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_item" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.glite.popeyes.view.custom.FuturaButton
+        android:id="@+id/button_checkout"
+        style="@style/button.menu"
+        android:layout_weight="1"
+        android:background="@drawable/btn_blue_selector"
+        android:text="@string/text_checkout" />
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_basket_header"-->
+        <!--style="@style/OrangeStyle17"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/dimen10dp"-->
+        <!--android:background="@drawable/bg_black_when_would_you_like"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/text_checkout"-->
+        <!--android:textAllCaps="true" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_checkout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_delivery_address"
+                style="@style/text.white.bold18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6dp"
+                android:layout_marginLeft="@dimen/dimen8dp"
+                android:layout_marginStart="@dimen/dimen8dp"
+                android:text="@string/text_delivery_address_" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen4dp"
+                android:layout_marginRight="@dimen/dimen6dp"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:background="@drawable/bg_2">
+
+                <TextView
+                    android:id="@+id/text_delivery_address_value"
+                    style="@style/text.blue.16sp.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="-4dp"
+                    android:background="@drawable/bg_123_mc_nair_store"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen12dp"
+                    android:paddingStart="@dimen/dimen12dp"
+                    android:text="123 McNair Road Singapore 434343" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_delivery_address_value"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginLeft="@dimen/dimen16dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen12dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_phone_number_label"
+                            style="@style/text.blue.14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_phone_number_" />
+
+                        <TextView
+                            android:id="@+id/text_delivery_label"
+                            style="@style/text.blue.14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen6dp"
+                            android:text="@string/text_delivery_date" />
+
+                        <TextView
+                            android:id="@+id/delivery_selected_time"
+                            style="@style/text.blue.14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen6dp"
+                            android:text="@string/text_delivery_selected_time" />
+
+                        <TextView
+                            android:id="@+id/text_total"
+                            style="@style/TextButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen6dp"
+                            android:layout_marginEnd="@dimen/dimen24dp"
+                            android:layout_marginRight="@dimen/dimen24dp"
+                            android:text="@string/text_total" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_phone_number_value"
+                            style="@style/text.orange.14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen4dp"
+                            android:ellipsize="marquee"
+                            android:paddingLeft="@dimen/dimen24dp"
+                            android:singleLine="true"
+                            android:text="+42354543543534" />
+
+                        <TextView
+                            android:id="@+id/text_delivery_date"
+                            style="@style/text.orange.14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen8dp"
+                            android:paddingLeft="@dimen/dimen24dp"
+                            android:text="9 Aug 2016" />
+
+                        <TextView
+                            android:id="@+id/delivery_selected_time_value"
+                            style="@style/text.orange.14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen8dp"
+                            android:paddingLeft="@dimen/dimen24dp"
+                            android:text="10:6 AM" />
+
+                        <TextView
+                            android:id="@+id/total_value"
+                            style="@style/text.orange.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen8dp"
+                            android:paddingLeft="@dimen/dimen24dp"
+                            android:text="$29.9" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <ImageButton
+                android:id="@+id/buy_with_master_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen24dp"
+                android:background="@drawable/buttonbuy_with_master_pass" />
+
+            <Button
+                android:id="@+id/button_pay_with_credit_card"
+                style="@style/button.pay_with_credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen24dp"
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:background="@drawable/bg_blue_button_selector" />
+
+            <Button
+                android:id="@+id/button_cash_on_delivery"
+                style="@style/button.cash_on_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen24dp"
+                android:layout_marginBottom="69dp"
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:background="@drawable/bg_blue_button_selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

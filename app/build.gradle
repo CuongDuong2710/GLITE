@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'android-apt'
+apply plugin: 'me.tatarka.retrolambda' // make sure to apply last!
+
+def cfg = rootProject.ext.configurations
+def libs = rootProject.ext.libraries;
+
+
+android {
+    compileSdkVersion cfg.compileVersion
+    buildToolsVersion cfg.buildToolsVersion
+
+    defaultConfig {
+        applicationId cfg.package
+        minSdkVersion cfg.minSdk
+        targetSdkVersion cfg.targetSdk
+        versionCode cfg.version_code
+        versionName cfg.version_name
+        multiDexEnabled true
+
+        buildConfigField "String", "BASE_API_URL", cfg.BASE_API_URL
+        buildConfigField "String", "SERVER_CLIENT_ID", cfg.SERVER_CLIENT_ID
+    }
+    buildTypes {
+
+        def BOOLEAN = "boolean"
+        def TRUE = "true"
+        def FALSE = "false"
+        def LOG_OKHTTP_REQUEST = "LOG_OKHTTP_REQUEST"
+        def REPORT_CRASHES = "REPORT_CRASHES"
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //ignore duplicate package
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '25.0.0'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // Android
+//    compile "com.google.firebase:firebase-core:${libs.playServices}"
+//    compile "com.google.android.gms:play-services-ads:${libs.playServices}"
+    compile "com.google.android.gms:play-services-auth:${libs.playServices}"
+//    compile "com.google.android.gms:play-services-gcm:${libs.playServices}"
+//    compile "com.google.android.gms:play-services-plus:${libs.playServices}"
+//    compile "com.google.android.gms:play-services-analytics:${libs.playServices}"
+//    compile "com.google.android.gms:play-services-maps:${libs.playServices}"
+
+//    compile "com.android.support:multidex:${libs.multidex}"
+    compile "com.android.support:design:${libs.supportVersion}"
+    compile "com.android.support:appcompat-v7:${libs.supportVersion}"
+    compile "com.android.support:recyclerview-v7:${libs.supportVersion}"
+    compile "com.google.code.gson:gson:${libs.gson}"
+    compile "com.squareup:otto:${libs.ottoBus}"
+
+    compile project(':Libs')
+
+    // Retrofit
+    compile "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    compile "com.squareup.retrofit2:converter-gson:${libs.retrofit}"
+    compile "com.squareup.retrofit2:adapter-rxjava:${libs.retrofit}"
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+    provided 'javax.annotation:jsr250-api:1.0'
+
+    // io.reactivex
+    compile "io.reactivex:rxandroid:${libs.rxAndroid}"
+    compile "io.reactivex:rxjava:${libs.rxJava}"
+
+    compile "jp.wasabeef:recyclerview-animators:${libs.recycler_animators}"
+    compile "com.jakewharton:butterknife:${libs.butterknife}"
+    apt "com.jakewharton:butterknife-compiler:${libs.butterknife}"
+
+    // Dagger2
+    apt "com.google.dagger:dagger-compiler:${libs.dagger2}"
+    compile "com.google.dagger:dagger:${libs.dagger2}"
+
+    // Facebook
+    compile "com.facebook.android:facebook-android-sdk:${libs.facebooksdk}"
+
+    // Expandable recycle view
+    compile "com.bignerdranch.android:expandablerecyclerview:${libs.expandable_lv}"
+    
+    // Picasso
+    compile "com.squareup.picasso:picasso:${libs.picasso}"
+
+    compile 'com.levelupstudio:expandable-recyclerview:1.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

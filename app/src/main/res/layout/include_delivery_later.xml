@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen18dp"
+    android:background="@drawable/bg_rectangle_white80"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen24dp"
+    android:gravity="center"
+    android:paddingRight="@dimen/dimen24dp"
+    android:paddingTop="40dp">
+
+    <com.glite.popeyes.view.custom.VerdanaTextView
+        style="@style/text.blue.14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_up_to_2_weeks" />
+
+    <com.glite.popeyes.view.custom.VerdanaTextView
+        android:id="@+id/text_select_order_date"
+        style="@style/text.blue.14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen6dp"
+        android:background="@drawable/labeltext_field"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen8dp"
+        android:paddingRight="@dimen/dimen8dp"
+        android:text="@string/text_date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen6dp"
+        android:layout_marginTop="@dimen/dimen6dp"
+        android:layout_gravity="left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dimen24dp"
+            android:layout_height="@dimen/dimen24dp"
+            android:src="@drawable/shape" />
+
+        <com.glite.popeyes.view.custom.VerdanaTextView
+            style="@style/text.blue.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/text_delivery_time" />
+
+    </LinearLayout>
+
+    <com.glite.popeyes.view.custom.VerdanaTextView
+        android:id="@+id/text_select_order_time"
+        style="@style/text.blue.14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/labeltext_field"
+        android:paddingLeft="@dimen/dimen8dp"
+        android:paddingRight="@dimen/dimen8dp"
+        android:paddingTop="@dimen/dimen16dp"
+        android:text="@string/text_select_the_time" />
+
+    <com.glite.popeyes.view.custom.FuturaButton
+        android:id="@+id/button_start_order"
+        style="@style/text.white.bold18sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_normal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen16dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="@dimen/dimen16dp"
+        android:background="@drawable/bg_rouge_selector"
+        android:text="@string/text_start_order" />
+
+</LinearLayout>

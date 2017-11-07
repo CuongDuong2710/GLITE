@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpopeyes"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen8dp"
+                android:layout_marginRight="@dimen/dimen8dp"
+                android:background="@drawable/bg_rectangle_white80"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen14dp"
+                android:paddingLeft="@dimen/dimen8dp"
+                android:paddingRight="@dimen/dimen8dp"
+                android:paddingTop="@dimen/dimen18dp">
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_delivery_available"
+                    style="@style/text.blue.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_delivery_is_available" />
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_available_delivery_address"
+                    style="@style/text.orange.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_delivery_available"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:paddingBottom="@dimen/dimen10dp"
+                    android:paddingTop="@dimen/dimen10dp"
+                    android:text="22 Sin Ming Lane   Singapore 573969" />
+
+
+                <com.glite.popeyes.view.custom.VerdanaTextView
+                    android:id="@+id/text_message"
+                    style="@style/text.blue.12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_available_delivery_address"
+                    android:background="@color/transparent"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/msg_when_would_you_like_your_order_delivery" />
+
+            </RelativeLayout>
+
+
+            <com.glite.popeyes.view.custom.FuturaButton
+                android:id="@+id/button_order_asap"
+                style="@style/text.white.bold18sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_normal"
+                android:layout_marginBottom="@dimen/dimen16dp"
+                android:layout_marginLeft="@dimen/dimen32dp"
+                android:layout_marginRight="@dimen/dimen32dp"
+                android:layout_marginTop="@dimen/dimen16dp"
+                android:background="@drawable/bg_blue_button_selector"
+                android:text="@string/text_as_soon_as_possible" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="136dp"
+                android:layout_marginLeft="@dimen/dimen8dp"
+                android:layout_marginRight="@dimen/dimen8dp">
+
+                <com.glite.popeyes.view.custom.FuturaButton
+                    android:id="@+id/button_order_later"
+                    style="@style/text.white.bold18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_normal"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:background="@drawable/bg_orange_button_selector"
+                    android:text="@string/text_later" />
+
+                <include layout="@layout/include_delivery_later" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

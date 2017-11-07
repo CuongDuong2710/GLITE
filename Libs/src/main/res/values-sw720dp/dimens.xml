@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- general -->
+    <!-- width or height layout -->
+    <dimen name="width_height_midle_small_negative">-12dp</dimen>
+    <dimen name="width_height_small">25dp</dimen>
+    <dimen name="width_height_normal">50dp</dimen>
+    <dimen name="width_height_normal_medium">80dp</dimen>
+    <dimen name="width_height_medium">100dp</dimen>
+    <dimen name="width_height_medium_large">110dp</dimen>
+    <dimen name="width_height_large">130dp</dimen>
+    <dimen name="width_height_super_large">150dp</dimen>
+    <dimen name="width_height_mega">180dp</dimen>
+    <dimen name="width_height_super_mega">260dp</dimen>
+    <dimen name="width_height_extra">360dp</dimen>
+    <dimen name="width_height_super_extra">420dp</dimen>
+    <dimen name="width_height_maxi">620dp</dimen>
+
+    <!-- margin or panding layout -->
+    <dimen name="margin_panding_line">1px</dimen>
+    <dimen name="margin_panding_bold_line">1dp</dimen>
+    <dimen name="margin_panding_small">6dp</dimen>
+    <dimen name="margin_panding_normal">10dp</dimen>
+    <dimen name="margin_panding_medium">20dp</dimen>
+    <dimen name="margin_panding_large">30dp</dimen>
+    <dimen name="margin_panding_medium_large">56dp</dimen>
+    <dimen name="margin_panding_super_large">60dp</dimen>
+    <dimen name="margin_panding_mega">80dp</dimen>
+    <dimen name="margin_panding_super_mega">120dp</dimen>
+    <dimen name="margin_panding_extra">160dp</dimen>
+    <dimen name="margin_panding_super_extra">200dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_normal">20sp</dimen>
+    <dimen name="text_size_medium">24sp</dimen>
+    <dimen name="text_size_large">36sp</dimen>
+    <dimen name="text_size_super_large">48sp</dimen>
+    <dimen name="text_size_mega">60sp</dimen>
+    <dimen name="text_size_super_mega">72sp</dimen>
+    <dimen name="text_size_extra">96sp</dimen>
+    <dimen name="text_size_super_extra">128sp</dimen>
+
+</resources>

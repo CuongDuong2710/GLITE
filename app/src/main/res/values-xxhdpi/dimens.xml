@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="margin_right_edit_number_order_item">60dp</dimen>
+
+</resources>

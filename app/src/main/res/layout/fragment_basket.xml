@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_basket_header"
+            style="@style/OrangeStyle17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen10dp"
+            android:background="@drawable/bgwhen_would_you_text_basket"
+            android:gravity="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rev_cart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@drawable/recycler_scrollbar"
+            android:scrollbarSize="@dimen/dimen4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/dimen6dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_207_copy_2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.glite.popeyes.view.custom.FuturaButton
+                    android:id="@+id/button_add_more_order"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:background="@drawable/buttonorder_instore_pick_up_active_copy"
+                    android:text="@string/text_add_more_order"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="113.9dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen10dp"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:layout_marginLeft="@dimen/dimen16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen6dp">
+
+                <TextView
+                    android:id="@+id/text_promotion_code_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/marin_blue"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_enter_your"
+                    />
+
+                <EditText
+                    android:id="@+id/text_promotion_code"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/buttonpromo_code"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:hint="@string/text_promo_code"
+                    android:textColorHint="@color/orange"
+                    android:textSize="18sp"
+                    android:textColor="@color/orange"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen10dp"
+                android:layout_marginLeft="@dimen/dimen16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_subtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextStyleBlue14"
+                        android:textStyle="bold"
+                        android:text="@string/text_subtotal" />
+
+                    <TextView
+                        android:id="@+id/text_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen10dp"
+                        style="@style/TextStyleBlue14"
+                        android:textStyle="bold"
+                        android:text="@string/text_delivery_fee" />
+
+                    <TextView
+                        android:id="@+id/text_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen10dp"
+                        style="@style/TextStyleBlue14"
+                        android:textStyle="bold"
+                        android:text="@string/text_total_basket" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen32dp">
+
+                    <TextView
+                        android:id="@+id/sub_total_value"
+                        style="@style/TextStyleBlue14"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen3dp"
+                        android:text="$16.90" />
+
+                    <TextView
+                        android:id="@+id/delivery_value"
+                        style="@style/TextStyleBlue14"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen3dp"
+                        android:text="$5.00" />
+
+                    <TextView
+                        android:id="@+id/total_value"
+                        style="@style/TextStyleBlue14"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen3dp"
+                        android:text="$16.90" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/text.blue.12sp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_all_price_are_inclusive_of_7_gst" />
+
+            <com.glite.popeyes.view.custom.FuturaButton
+                android:id="@+id/button_checkout"
+                style="@style/button.checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rouge_selector"
+                android:layout_marginTop="@dimen/dimen4dp"
+                android:layout_marginLeft="@dimen/dimen32dp"
+                android:layout_marginRight="@dimen/dimen32dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

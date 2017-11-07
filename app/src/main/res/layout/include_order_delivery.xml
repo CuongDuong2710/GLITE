@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen6dp"
+    android:layout_marginRight="@dimen/dimen6dp"
+    android:layout_marginTop="@dimen/dimen12dp"
+    android:background="@drawable/bg_black_delivery"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="-8dp"
+        android:paddingEnd="-3dp"
+        android:paddingLeft="-5dp"
+        android:paddingRight="-3dp"
+        android:paddingStart="-5dp">
+
+        <com.glite.popeyes.view.custom.CustomButtonIcon
+            android:id="@+id/button_order_delivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            app:btn_background="@drawable/bg_tab_enabled"
+            app:btn_text="@string/text_order_delivery"
+            app:btn_text_capital="true"
+            app:btn_text_size="@dimen/button_text_size_17sp" />
+
+
+        <com.glite.popeyes.view.custom.CustomButtonIcon
+            android:id="@+id/button_instore_pickup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            app:btn_background="@drawable/bg_tab_disabled"
+            app:btn_text="@string/text_in_store_pickup"
+            app:btn_text_capital="true"
+            app:btn_text_size="@dimen/button_text_size_17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen6dp"
+        android:orientation="vertical">
+
+        <com.glite.popeyes.view.custom.VerdanaTextView
+            android:id="@+id/tv_delivery_address"
+            style="@style/TextStyleBlue14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen24dp"
+            android:layout_marginTop="@dimen/dimen12dp"
+            android:maxLines="1"
+            android:text="@string/text_delivery_address" />
+
+
+        <com.glite.popeyes.view.custom.VerdanaEditText
+            android:id="@+id/edt_delivery_address"
+            style="@style/EditTextGuestStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen32dp"
+            android:layout_marginLeft="@dimen/dimen24dp"
+            android:layout_marginRight="@dimen/dimen24dp"
+            android:layout_marginTop="@dimen/dimen4dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <com.glite.popeyes.view.custom.CustomBigButtonIcon
+            android:id="@+id/btn_check_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen32dp"
+            app:btn_background="@drawable/bg_rouge_selector"
+            app:btn_text="@string/text_check_availability"
+            app:btn_text_capital="true"
+            app:btn_text_size="@dimen/button_text_size_18sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

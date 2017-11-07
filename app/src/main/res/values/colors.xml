@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brown">#55220d</color>
+    <color name="input_member">#e8e1d7</color>
+    <color name="btn_purple">#5b2d6b</color>
+    <color name="purple">#8a499c</color>
+    <color name="purple_yes">#7c3f8f</color>
+    <color name="favourites_bg">#ebe4d7</color>
+    <color name="add_favourites_bg">#cdcdcd</color>
+    <color name="blue">#99003a63</color>
+    
+    <color name="light_green">#478f72</color>
+    <color name="bright_green">#83c3a9</color>
+    <color name="yellow">#ea6507</color>
+    <color name="background_light">#f8e5db</color>
+    <color name="background_light_green">#b9e5d3</color>
+    <color name="text_main">#FFFFFF</color>
+    <color name="black_trans">#88000000</color>
+    <color name="white_trans">#33ffffff</color>
+    <color name="white_20percent">#33ffffff</color>
+    <color name="white_30percent">#4dffffff</color>
+    <color name="white_35percent">#59ffffff</color>
+    <color name="white_40percent">#66ffffff</color>
+    <color name="white_50percent">#80ffffff</color>
+    <color name="white_80percent">#CCffffff</color>
+    <color name="yellow_50percent">#80f6a931</color>
+    <color name="red_50percent">#80ff0000</color>
+
+    <!-- Soup Spoon -->
+    <color name="ss_gray">#929292</color>
+    <color name="ss_orange">#ea6507</color>
+    <color name="ss_yellow">#ebe902</color>
+    <color name="ss_blue">#4b5679</color>
+    <color name="ss_dark_blue">#252931</color>
+    <color name="ss_very_dark_blue">#1c2027</color>
+    <color name="ss_blue_text">#007aff</color>
+
+    <!--POPEYES -->
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#F58426</color>
+    <color name="white_60percent">#99ffffff</color>
+    <color name="black">#464646</color>
+
+    <color name="blue50">#E3F2FD</color>
+    <color name="grey500">#9E9E9E</color>
+
+    <!--BUTTON-->
+    <color name="fb">#4460a0</color>
+    <color name="gplus">#f93f2d</color>
+    <color name="marin_blue">#003a63</color>
+    <color name="rouge">#c41230</color>
+
+    <!--Divider-->
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+    <color name="shadow_button">#80000000</color>
+
+    <color name="divider_sub_menu">#DBDBDB</color>
+
+    <color name="light_gray">#9b9b9b</color>
+
+    <color name="shadowColor">#40000000</color>
+
+
+</resources>

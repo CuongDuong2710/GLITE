@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_1">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/dimen6dp"
+        android:src="@drawable/cancel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/text_cash_on_delivery"
+        android:textAllCaps="true"
+        style="@style/OrangeStyle17"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignEnd="@+id/linearLayout6"
+        android:layout_alignRight="@+id/linearLayout6"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="@dimen/dimen12dp"
+        android:layout_marginRight="@dimen/dimen12dp"
+        android:layout_marginTop="@dimen/dimen6dp"
+        android:background="@drawable/bg_line" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen18dp"
+        android:layout_marginRight="@dimen/dimen18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen12dp"
+            android:text="@string/text_we_have_sent_a_4_digit_pin_code_to_your_mobile_number_at"
+            style="@style/TextButtonStyle"/>
+
+        <TextView
+            android:id="@+id/text_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen6dp"
+            android:padding="@dimen/dimen4dp"
+            android:text="+65 545905490"
+            style="@style/text.orange.16sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen4dp"
+            android:text="@string/text_please_enter_your_pin"
+            style="@style/TextButtonStyle" />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen4dp"
+            android:background="@drawable/bgdigit_no"
+            android:gravity="center"
+            android:hint="Digit Only"
+            android:textAllCaps="false"
+            android:textColorHint="@color/orange"
+            style="@style/text.orange.14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen4dp"
+            android:text="@string/text_to_confirm_your_delivery_order"
+            style="@style/text.blue.16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen4dp"
+            android:text="@string/text_thank_you"
+            style="@style/TextButtonStyle"/>
+
+        <com.glite.popeyes.view.custom.FuturaButton
+            android:id="@+id/button_summit"
+            style="@style/text.white.bold18sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_normal"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginBottom="@dimen/dimen24dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/bg_rouge_selector"
+            android:text="@string/text_summit" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

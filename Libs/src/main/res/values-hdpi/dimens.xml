@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- general -->
+    <!-- width or height layout -->
+      <dimen name="width_height_midle_small_negative">-7dp</dimen>
+    <dimen name="width_height_small">15dp</dimen>
+    <dimen name="width_height_normal">25dp</dimen>
+    <dimen name="width_height_normal4">103dp</dimen>
+    <dimen name="width_height_normal_medium">35dp</dimen>
+    <dimen name="width_height_medium">40dp</dimen>
+    <dimen name="width_height_medium_large">45dp</dimen>
+    <dimen name="width_height_large">50dp</dimen>
+    <dimen name="width_height_super_large">65dp</dimen>
+    <dimen name="width_height_mega">68dp</dimen>
+    <dimen name="width_height_super_mega">94dp</dimen>
+    <dimen name="width_height_extra">135dp</dimen>
+	<dimen name="width_height_extra0">150dp</dimen>
+    <dimen name="width_height_super_extra">160dp</dimen>
+    <dimen name="width_height_super_extra0">200dp</dimen>
+    <dimen name="width_height_maxi">275dp</dimen>
+
+    <!-- margin or panding layout -->
+    <dimen name="margin_panding_line">1px</dimen>
+       <dimen name="margin_panding_bold_line">1dp</dimen>
+    <dimen name="margin_panding_small">3dp</dimen>
+    <dimen name="margin_panding_normal">5dp</dimen>
+    <dimen name="margin_panding_medium">7dp</dimen>
+    <dimen name="margin_panding_large">11dp</dimen>
+    <dimen name="margin_panding_medium_large">18dp</dimen>
+    <dimen name="margin_panding_super_large">22dp</dimen>
+    <dimen name="margin_panding_mega">28dp</dimen>
+    <dimen name="margin_panding_super_mega">38dp</dimen>
+    <dimen name="margin_panding_extra">46dp</dimen>
+    <dimen name="margin_panding_super_extra">72dp</dimen>
+
+     <!-- text size -->
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_normal">10sp</dimen>
+	<dimen name="text_size_normal_medium">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_super_large">20sp</dimen>
+    <dimen name="text_size_mega">24sp</dimen>
+    <dimen name="text_size_super_mega">28sp</dimen>
+    <dimen name="text_size_extra">36sp</dimen>
+    <dimen name="text_size_super_extra">42sp</dimen>
+    <dimen name="text_size_super_extra0">50sp</dimen>
+    <dimen name="text_size_super_maxi">64sp</dimen>
+
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top"
+    android:layout_marginTop="@dimen/dimen20dp"
+    android:background="@drawable/bg_black_asap"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen6dp"
+    android:paddingTop="@dimen/dimen64dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen24dp"
+        android:paddingRight="@dimen/dimen24dp">
+
+        <TextView
+            android:id="@+id/text_approximately"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_approximately"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/minute_number"
+                style="@style/TextStyle36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen6dp"
+                android:layout_marginRight="@dimen/dimen6dp"
+                android:text="30" />
+
+            <TextView
+                android:id="@+id/minute_text"
+                style="@style/TextStyle36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen24dp"
+                android:layout_marginLeft="@dimen/dimen6dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:layout_marginStart="@dimen/dimen6dp"
+                android:text="minutes" />
+
+            <ImageView
+                android:id="@+id/minute_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_clock" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_after_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_after_checkout"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_start_order"
+        style="@style/TextButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_btn_start_order"
+        android:text="@string/text_start_order" />
+
+</LinearLayout>

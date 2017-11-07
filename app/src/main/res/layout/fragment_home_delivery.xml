@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpopeyes"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_header_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_marginTop="-3dp"
+                android:background="@drawable/bg_delivery_header"
+                android:scaleType="fitXY" />
+
+            <com.glite.popeyes.view.custom.FuturaTextView
+                style="@style/text.blue.16sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_normal"
+                android:layout_marginBottom="@dimen/dimen8dp"
+                android:layout_marginTop="@dimen/dimen8dp"
+                android:background="@drawable/bg_rectangle_white80"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/dimen16dp"
+                android:paddingLeft="@dimen/dimen16dp"
+                android:paddingRight="@dimen/dimen16dp"
+                android:paddingStart="@dimen/dimen16dp"
+                android:text="@string/text_enter_postal_code" />
+
+            <include layout="@layout/include_delivery_postal_code" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

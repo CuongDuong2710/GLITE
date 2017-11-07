@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "911232722369",
+    "project_id": "popayes-singapore"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911232722369:android:4a3ab239e599970a",
+        "android_client_info": {
+          "package_name": "com.glite.popeyes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911232722369-f3kk15m1jne13h4bi5pngmj3sq8bgt2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.glite.popeyes",
+            "certificate_hash": "6348DCABC3CEA185E1B12806A826F11A88F36836"
+          }
+        },
+        {
+          "client_id": "911232722369-f3fsprh702qt5tja09rkt7gt4mfch8do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDNxiJIeuCjEFghTrqwptWTh62V7Jo41Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="184dp"
+    android:background="@drawable/bg_rectangle_white80"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen32dp"
+    android:paddingRight="@dimen/dimen32dp">
+
+    <com.glite.popeyes.view.custom.VerdanaEditText
+        android:id="@+id/edit_postal_code_here"
+        style="@style/text.orange.12sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen32dp"
+        android:layout_marginTop="@dimen/dimen16dp"
+        android:background="@drawable/bg_round_postal_code"
+        android:hint="@string/text_hint_postal_code"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen8dp"
+        android:paddingStart="@dimen/dimen8dp"
+        android:paddingRight="@dimen/dimen8dp"
+        android:paddingEnd="@dimen/dimen8dp"
+        android:paddingTop="@dimen/dimen8dp"
+        android:text="569951"
+        android:textColorHint="@color/orange"
+        android:textStyle="italic" />
+
+    <com.glite.popeyes.view.custom.FuturaButton
+        android:id="@+id/btn_check_availability_postal_code"
+        style="@style/text.white.bold18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen6dp"
+        android:layout_marginTop="@dimen/dimen16dp"
+        android:background="@drawable/bg_rouge_selector"
+        android:text="@string/text_check_availability" />
+
+    <com.glite.popeyes.view.custom.VerdanaTextView
+        android:id="@+id/text_our_delivery_time"
+        style="@style/text.blue.14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:lineSpacingExtra="8sp"
+        android:gravity="left"
+        android:text="@string/text_delivery_time_from_to"
+        android:textStyle="italic" />
+
+</LinearLayout>

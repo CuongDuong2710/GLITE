@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Values tablet -->
+    <!-- width or height layout -->
+    <dimen name="width_height_midle_small_negative">-10dp</dimen>
+    <dimen name="width_height_small">25dp</dimen>
+    <dimen name="width_height_normal">50dp</dimen>
+    <dimen name="width_height_normal_medium">60dp</dimen>
+    <dimen name="width_height_medium">70dp</dimen>
+    <dimen name="width_height_medium_large">85dp</dimen>
+    <dimen name="width_height_large">100dp</dimen>
+    <dimen name="width_height_super_large">120dp</dimen>
+    <dimen name="width_height_mega">140dp</dimen>
+    <dimen name="width_height_super_mega">190dp</dimen>
+    <dimen name="width_height_extra">220dp</dimen>
+    <dimen name="width_height_super_extra">240dp</dimen>
+    <dimen name="width_height_maxi">320dp</dimen>
+
+    <!-- margin or panding layout -->
+    <dimen name="margin_panding_line">1px</dimen>
+    <dimen name="margin_panding_bold_line">1dp</dimen>
+    <dimen name="margin_panding_small">3dp</dimen>
+    <dimen name="margin_panding_normal">5dp</dimen>
+    <dimen name="margin_panding_medium">10dp</dimen>
+    <dimen name="margin_panding_large">25dp</dimen>
+    <dimen name="margin_panding_medium_large">28dp</dimen>
+    <dimen name="margin_panding_super_large">30dp</dimen>
+    <dimen name="margin_panding_mega">40dp</dimen>
+    <dimen name="margin_panding_super_mega">60dp</dimen>
+    <dimen name="margin_panding_extra">80dp</dimen>
+    <dimen name="margin_panding_super_extra">100dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_super_large">28sp</dimen>
+    <dimen name="text_size_mega">36sp</dimen>
+    <dimen name="text_size_super_mega">48sp</dimen>
+    <dimen name="text_size_extra">60sp</dimen>
+    <dimen name="text_size_super_extra">92sp</dimen>
+
+</resources>

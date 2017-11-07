@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginLeft="@dimen/dimen8dp"
+    android:layout_marginRight="@dimen/dimen8dp"
+    android:paddingBottom="@dimen/dimen24dp"
+    android:paddingLeft="@dimen/dimen12dp"
+    android:paddingRight="@dimen/dimen12dp"
+    android:paddingTop="@dimen/dimen20dp">
+
+    <com.glite.popeyes.view.custom.VerdanaTextView
+        android:id="@+id/text_title"
+        style="@style/text.rouge.12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_delivery_is_not_available_as_our_stores_are_closed" />
+
+    <com.glite.popeyes.view.custom.VerdanaTextView
+        android:id="@+id/text_message"
+        style="@style/text.blue.12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:text="@string/msg_would_you_like_to_order_for_another_day" />
+
+    <com.glite.popeyes.view.custom.FuturaButton
+        android:id="@+id/btn_ok"
+        style="@style/text.white.bold18sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_normal"
+        android:layout_below="@+id/text_message"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:background="@drawable/bg_rouge_selector"
+        android:text="@string/text_ok" />
+
+</RelativeLayout>

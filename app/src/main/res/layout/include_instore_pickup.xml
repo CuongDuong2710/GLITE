@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen6dp"
+    android:layout_marginRight="@dimen/dimen6dp"
+    android:layout_marginTop="@dimen/dimen12dp"
+    android:background="@drawable/bg_black_store_pickup"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="-8dp"
+        android:paddingEnd="-3dp"
+        android:paddingLeft="-5dp"
+        android:paddingRight="-3dp"
+        android:paddingStart="-5dp">
+
+
+        <Button
+            android:id="@+id/button_order_delivery"
+            style="@style/TextDeliveryStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_in_store_pickup"
+            android:text="@string/text_order_delivery"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_instore_pickup"
+            style="@style/TextDeliveryStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_order_delivery"
+            android:text="@string/text_in_store_pickup"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_header_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_pickup"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dimen4dp"
+            android:paddingLeft="@dimen/dimen4dp"
+            android:paddingStart="@dimen/dimen4dp"
+            android:text="@string/text_i_want_to_pickup_my_order_at"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_search_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:background="@drawable/bg_search"
+                android:drawableEnd="@drawable/icon_searching"
+                android:drawableRight="@drawable/icon_searching"
+                android:paddingEnd="@dimen/dimen10dp"
+                android:paddingLeft="@dimen/dimen24dp"
+                android:paddingRight="@dimen/dimen10dp"
+                android:paddingStart="@dimen/dimen24dp"
+                android:text="City Square Mall"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btn_check_availability"
+                style="@style/TextButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12dp"
+                android:background="@drawable/btn_select_pickup_time"
+                android:text="@string/text_select_my_pickup_time" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

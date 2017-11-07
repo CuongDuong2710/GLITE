@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="dimen_margin_top_banner_home_delivery">22dp</dimen>
+    <dimen name="margin_right_edit_number_order_item">50dp</dimen>
+</resources>

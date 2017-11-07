@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_popoyes_layerlist"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/dimen6dp"-->
+        <!--android:background="@drawable/bg_black_item_parent"-->
+
+        <!--android:orientation="vertical"-->
+        <!--android:paddingEnd="@dimen/dimen32dp"-->
+        <!--android:paddingLeft="@dimen/dimen32dp"-->
+        <!--android:paddingRight="@dimen/dimen32dp"-->
+        <!--android:paddingStart="@dimen/dimen32dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/parent_title"-->
+            <!--style="@style/OrangeStyle17"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:maxLines="1"-->
+            <!--android:padding="@dimen/dimen3dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="Family and Group Meals" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/parent_sub_title"-->
+            <!--style="@style/OrangeStyle14"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:maxLines="1"-->
+            <!--android:padding="@dimen/dimen3dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="for 2-10 people" />-->
+
+    <!--</LinearLayout>-->
+
+    <include layout="@layout/item_delivery_menu_parent"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rev_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dimen6dp"
+        android:paddingRight="@dimen/dimen6dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

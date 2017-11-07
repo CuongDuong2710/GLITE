@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dimen6dp"
+    android:layout_marginLeft="@dimen/dimen6dp"
+    android:layout_marginRight="@dimen/dimen6dp"
+    android:layout_marginStart="@dimen/dimen6dp"
+    android:layout_marginTop="@dimen/dimen12dp"
+    android:background="@drawable/bg_black_order_in_store_pickup"
+    android:paddingBottom="@dimen/dimen6dp">
+
+
+    <TextView
+        android:id="@+id/title_order"
+        style="@style/TextButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/bg_city_square"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dimen12dp"
+        android:paddingLeft="@dimen/dimen12dp"
+        android:paddingRight="@dimen/dimen12dp"
+        android:paddingStart="@dimen/dimen12dp"
+        android:text="CITY SQUARE MALL" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/title_order"
+        android:layout_alignRight="@+id/title_order"
+        android:layout_below="@+id/title_order"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dimen18dp"
+        android:paddingLeft="@dimen/dimen18dp"
+        android:paddingRight="@dimen/dimen18dp"
+        android:paddingStart="@dimen/dimen18dp">
+
+        <TextView
+            android:id="@+id/text_address_road"
+            style="@style/TextStyleWhite14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/title_order"
+            android:layout_marginTop="12dp"
+            android:padding="@dimen/dimen3dp"
+            android:text="180 Kitchener Road #02-39/40" />
+
+        <TextView
+            android:id="@+id/text_address_country"
+            style="@style/TextStyleWhite14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen3dp"
+            android:text="Singapore 20000089 SG" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            style="@style/TextStyleWhite14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen3dp"
+            android:text="+654349304893" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/icon_clock" />
+
+            <TextView
+                android:id="@+id/text_open_today"
+                style="@style/TextButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/dimen6dp"
+                android:layout_marginStart="@dimen/dimen6dp"
+                android:layout_marginRight="@dimen/dimen6dp"
+                android:text="Open today:" />
+
+            <TextView
+                style="@style/TextButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="10AM_11:30 PM" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_order_in_store_pickup"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen12dp"
+            android:background="@drawable/bg_order_instore_pick_up_active"
+            android:text="@string/text_order_in_store_pickup" />
+
+        <TextView
+            android:id="@+id/text_footer"
+            style="@style/TextStyleWhite14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen6dp"
+            android:text="Online ordering not yet available" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

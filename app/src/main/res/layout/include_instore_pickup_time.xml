@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen6dp"
+    android:layout_marginRight="@dimen/dimen6dp"
+    android:layout_marginTop="@dimen/dimen12dp"
+    android:background="@drawable/bg_black_pick_time_large"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="-8dp"
+        android:paddingEnd="-3dp"
+        android:paddingLeft="-5dp"
+        android:paddingRight="-3dp"
+        android:paddingStart="-5dp">
+
+
+        <Button
+            android:id="@+id/button_order_delivery"
+            style="@style/TextDeliveryStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_in_store_pickup"
+            android:text="@string/text_order_delivery"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_instore_pickup"
+            style="@style/TextDeliveryStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_order_delivery"
+            android:text="@string/text_in_store_pickup"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_header_pickup"
+            style="@style/TextButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_pick_time"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dimen4dp"
+            android:paddingLeft="@dimen/dimen4dp"
+            android:paddingStart="@dimen/dimen4dp"
+            android:text="@string/text_my_in_store_pickup_is_at"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:background="@drawable/bg_black_pick_time_square">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginTop="-4dp"
+                android:background="@drawable/bg_pick_location"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen6dp"
+                android:paddingStart="@dimen/dimen6dp">
+
+
+                <TextView
+                    android:id="@+id/text_address"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/dimen6dp"
+                    android:paddingLeft="@dimen/dimen6dp"
+                    android:paddingRight="@dimen/dimen6dp"
+                    android:paddingStart="@dimen/dimen6dp"
+                    android:singleLine="true"
+                    android:text="CiTy Square Mall"
+                    android:textAllCaps="true" />
+
+                <Button
+                    style="@style/TextButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_change_location"
+                    android:text="@string/text_change_location"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:layout_marginLeft="@dimen/dimen10dp"
+                android:layout_marginRight="@dimen/dimen10dp"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:layout_marginTop="@dimen/dimen6dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/text_address1"
+                    style="@style/TextStyleWhite17.Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen4dp"
+                    android:text="180 Kitchener Road #02-39/40" />
+
+                <TextView
+                    android:id="@+id/text_address2"
+                    style="@style/TextStyleWhite17.Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen4dp"
+                    android:text="Singapore 243434343 SG" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    style="@style/TextStyleWhite17.Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen4dp"
+                    android:text="+65 434343 43434" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginEnd="@dimen/dimen6dp"
+                android:layout_marginLeft="@dimen/dimen6dp"
+                android:layout_marginRight="@dimen/dimen6dp"
+                android:layout_marginStart="@dimen/dimen6dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_clock" />
+
+                <TextView
+                    android:id="@+id/text_open_today"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/dimen6dp"
+                    android:layout_marginRight="@dimen/dimen6dp"
+                    android:layout_marginStart="@dimen/dimen6dp"
+                    android:text="Open today:" />
+
+                <TextView
+                    style="@style/TextButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="10AM_11:30 PM" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout2"
+                android:layout_alignStart="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginEnd="@dimen/dimen3dp"
+                android:layout_marginLeft="@dimen/dimen3dp"
+                android:layout_marginRight="@dimen/dimen3dp"
+                android:layout_marginStart="@dimen/dimen3dp"
+                android:layout_marginTop="@dimen/dimen12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_want_pick_up"
+                    style="@style/TextButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_i_want_to_pickup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text_now"
+                        style="@style/TextButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen24dp"
+                        android:layout_marginRight="@dimen/dimen24dp"
+                        android:drawableLeft="@drawable/icon_now_active"
+                        android:drawablePadding="@dimen/dimen3dp"
+                        android:drawableStart="@drawable/icon_now_active"
+                        android:gravity="center"
+                        android:text="@string/text_now" />
+
+                    <TextView
+                        android:id="@+id/text_later"
+                        style="@style/TextButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_now_inactive"
+                        android:drawablePadding="@dimen/dimen3dp"
+                        android:drawableStart="@drawable/icon_now_inactive"
+                        android:gravity="center"
+                        android:text="@string/text_later" />
+
+                </LinearLayout>
+
+                <include layout="@layout/include_later_pick_time" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button_start_your_order"
+                style="@style/TextButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen12dp"
+                android:background="@drawable/btn_start_your_oder"
+                android:text="@string/text_start_your_order" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
